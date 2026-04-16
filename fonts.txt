@@ -1,0 +1,18 @@
+Font: Integral CF, Satoshi
+Color:
+- Hero: #F2F0F1
+- Navbar: #fff
+- Banner: #000
+- Star: #FFC633
+
+Components:
+- Sign up for 20%
+- Navbar
+- Hero
+- Banner
+- Arrivals
+- Top-selling
+- Styles
+- Customers
+- Stay updated
+- Footer
