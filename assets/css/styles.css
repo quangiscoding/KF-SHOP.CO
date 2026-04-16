@@ -254,7 +254,7 @@ header {
   width: min(45%, 600px);
   position: absolute;
   right: 0;
-  bottom: -20vh;
+  bottom: -30vh;
 }
 
 .hero .image {
@@ -516,6 +516,39 @@ header {
   margin-bottom: 80px;
 }
 
+.customers-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.customers-top .action {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.customers-top .arrow {
+  background-color: var(--color-secondary);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 300ms ease;
+}
+
+.customers-top .arrow:hover {
+  color: var(--color-secondary);
+  background-color: var(--color-primary);
+}
+
+footer .action {
+  display: flex;
+  gap: 10px;
+}
+
 .customers .title {
   text-align: left;
   margin-bottom: 40px;
@@ -657,6 +690,7 @@ footer .copyright-and-payment {
   margin-top: 25px;
   display: flex;
   align-items: center;
+  gap: 20px;
 }
 
 footer .copyright {
@@ -700,6 +734,7 @@ footer .update {
   gap: 14px;
   margin-left: auto;
   width: 350px;
+  max-width: 100%;
 }
 
 footer .title {
@@ -781,6 +816,11 @@ footer .title {
     text-align: center;
   }
 
+  .hero .btn {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .nav .menu.showOnMobile {
     display: inline-block;
     cursor: pointer;
@@ -801,7 +841,7 @@ footer .title {
 
   footer .update {
     flex-direction: column;
-    top: -30%;
+    top: -30vh;
   }
 
   footer .title {
@@ -809,6 +849,14 @@ footer .title {
   }
 
   .footer-form {
+    margin-left: 0;
+  }
+
+  footer .copyright-and-payment {
+    flex-direction: column;
+  }
+
+  footer .payment-methods {
     margin-left: 0;
   }
 }
