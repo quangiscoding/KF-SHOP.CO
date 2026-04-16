@@ -239,7 +239,7 @@ header {
 }
 
 .hero .statistics .number {
-  font-size: 4rem;
+  font-size: calc(2rem + 1vw);
   font-weight: 700;
 }
 
@@ -689,6 +689,8 @@ footer .update {
   position: absolute;
   top: -90px;
   display: flex;
+  align-items: center;
+  gap: 20px;
   border-radius: 16px;
 }
 
@@ -710,7 +712,7 @@ footer .title {
 
 .footer-input-wrapper {
   position: relative;
-  width: 100%;
+  max-width: 100%;
 }
 
 .footer-input {
@@ -756,15 +758,34 @@ footer .title {
   background-color: var(--color-secondary);
 }
 
+@media (max-width: 1200px) {
+  .hero .container {
+    flex-direction: column;
+  }
+
+  .hero .info {
+    width: 100%;
+  }
+
+  .hero .image-wrapper {
+    display: none;
+  }
+}
+
 @media (max-width: 800px) {
   .hideOnMobile {
     display: none;
+  }
+
+  .hero .info {
+    text-align: center;
   }
 
   .nav .menu.showOnMobile {
     display: inline-block;
     cursor: pointer;
   }
+
   .style-grid {
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -772,5 +793,28 @@ footer .title {
       "formal"
       "party"
       "gym";
+  }
+
+  footer {
+    margin-top: 300px;
+  }
+
+  footer .update {
+    flex-direction: column;
+    top: -30%;
+  }
+
+  footer .title {
+    text-align: center;
+  }
+
+  .footer-form {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  html {
+    font-size: 40%;
   }
 }
