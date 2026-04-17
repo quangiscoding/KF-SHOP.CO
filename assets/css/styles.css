@@ -42,7 +42,7 @@ header {
 
 .x-icon {
   position: absolute;
-  right: 100px;
+  right: min(100px, 5vw);
   cursor: pointer;
 }
 
