@@ -794,6 +794,10 @@ footer .title {
 }
 
 @media (max-width: 1200px) {
+  .container {
+    width: calc(100% - 16vw);
+  }
+
   .hero .container {
     flex-direction: column;
   }
